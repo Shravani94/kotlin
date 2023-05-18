@@ -1,0 +1,37 @@
+fun main(){
+    println("immutable set creations")
+    val set= setOf<Any>("sravani","sravani","ruksana","amulya",1,2,4)
+        println(set)
+    val set2:Set<String> = mutableSetOf("sravani","sravani","ruksana","amulya")
+    println("size of immutable set is"+set.size)
+    println("the set is empty :"+set.isEmpty())
+    println("the set is not empty :"+set.isNotEmpty())
+    println("the set contains sravani : "+set.contains("sravani"))
+    println("the set contains in colletion : "+set.containsAll(set))
+    println("after droping the elmenet")
+    set.drop(4)
+    println(set)
+    println("distinct elemnts from set")
+    println(set.distinct())
+    println("element at particular location : "+set.elementAt(4))
+    println("element is present at particular location or not : "+set.elementAtOrNull(9))
+    //creating mutable set in one way
+    val set1:Set<String> = mutableSetOf<String>("book","pen","pencile","eraser","sharpnar")
+    println()
+    println("list of mutable set elements")
+    println(set1)
+    println("size of mutable set before updating : "+set1.size )
+    println()
+    println("after updation set1")
+    println(set1)
+    println()
+    println("after updating set1 set size is : "+set1.size)
+    println()
+    println("the set is empty : "+set1.isEmpty())
+    println("the set is not empty : "+set1.isNotEmpty())
+    println("the set contains book "+set1.contains("book"))
+    println("the set1 contains set : "+set1.containsAll(set))
+
+
+
+}

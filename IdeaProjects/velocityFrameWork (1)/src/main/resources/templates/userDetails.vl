@@ -1,0 +1,8 @@
+<htm>
+<body>
+FirstName:<h3>user.firstName</h3>
+lastName:<h3>user.lastName</h3>
+MailId:<h3>user.mailId</h3>
+password:<h3>user.password</h3>
+</body>
+</html>

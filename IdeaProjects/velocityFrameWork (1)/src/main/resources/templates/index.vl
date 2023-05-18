@@ -1,0 +1,12 @@
+<html>
+    <body>
+    <form action="/userDetails" method="get">
+        FirstName:<input type="text" name="firstName"><br><br>
+        LastName:<input type="text" name="lastName"><br><br>
+        MailId:<input type="text" name="mailId"><br><br>
+        Password:<input type="password" name="password"><br><br>
+        <input type="submit" value="Login">
+        </form>
+    </body>
+</html>
+Copied!

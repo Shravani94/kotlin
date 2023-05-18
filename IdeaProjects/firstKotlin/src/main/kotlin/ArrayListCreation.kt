@@ -1,0 +1,48 @@
+fun main(){
+    var student: ArrayList<String> =ArrayList<String>(5)
+    var student1: List<String> = mutableListOf("ruksana","pavan","babu")
+    student.add("Sravani")
+    student.add("Ranjith")
+    student.add("rakesh")
+    student.add("harshini")
+    student.add("advaith")
+    println("iterating array list using iterator")
+    val itr=student.iterator();
+    while(itr.hasNext())
+        println(itr.next())
+    println()
+    println("adding list of elemnts at a timme")
+    student.addAll(student1)
+    val itr1=student.iterator()
+    while(itr1.hasNext())
+        println(itr1.next())
+    println()
+    println("using set operator")
+    student.set(5,"Sravani")
+    println(student)
+    println()
+    println("using get operator")
+    println("value at index 6 is "+student.get(6))
+    println()
+    println("indexOf element")
+    println("first occurendc of"+student.indexOf("Sravani"))
+    println()
+    println("last occurence of element"+student.lastIndexOf("Sravani"))
+    println()
+    println("after removing element ")
+    student.remove("pavan")
+    println(student)
+    println()
+    println("after removing element from particular position")
+    student.removeAt(5)
+    println(student)
+    println()
+    println("after claring all elements from arrayList")
+    student.clear()
+    println(student)
+
+
+
+
+
+}
